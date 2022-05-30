@@ -1,1 +1,15 @@
-
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Web_scraping" position="(161.0, 187.0)" />
+	</nodes>
+	<links />
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xa0\x00\x00\x00\x05\x00\x00\x03!\x00\x00\x01\xfc\x00\x00\x00\xa1\x00\x00\x00\x1c\x00\x00\x03 \x00\x00\x01\xfb\x00\x00\x00\x00\x00\x00\x00\x00\x03\xc0\x00\x00\x00\xa1\x00\x00\x00\x1c\x00\x00\x03 \x00\x00\x01\xfb', 'scriptLibrary': [{'name': 'Table from numpy', 'script': "from Orange.data import *\ndata = [\n    ['green', 4, 1.2, 'apple'],\n    ['orange', 5, 1.1, 'orange'],\n    ['yellow', 4, 1.0, 'peach']\n]\ncolor = DiscreteVariable('color', values=set([row[0] for row in data]))\ncalories = ContinuousVariable('calories')\nfiber = ContinuousVariable('fiber')\nfruit = DiscreteVariable('fruit', values=set([row[3] for row in data]))\n\ndomain = Domain([color, calories, fiber], class_vars=fruit)\n#class_vars=fruit??????\n\ntable = Table.from_list(domain, data)\nout_data= table\n\n#create a table by inserting data", 'filename': None}], 'scriptText': "from Orange.data import *\ndata = [\n    ['green', 4, 1.2, 'apple'],\n    ['orange', 5, 1.1, 'orange'],\n    ['yellow', 4, 1.0, 'peach']\n]\ncolor = DiscreteVariable('color', values=set([row[0] for row in data]))\ncalories = ContinuousVariable('calories')\nfiber = ContinuousVariable('fiber')\nfruit = DiscreteVariable('fruit', values=set([row[3] for row in data]))\n\ndomain = Domain([color, calories, fiber], class_vars=fruit)\n#class_vars=fruit??????\n\ntable = Table.from_list(domain, data)\nout_data= table\n\n#create a table by inserting data", 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00|\x00\x00\x00J\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
